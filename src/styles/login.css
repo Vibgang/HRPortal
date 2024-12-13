@@ -1,0 +1,74 @@
+/* Ensure the entire page takes up full viewport height */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/public/assets/images/login_background.png'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Center the login box to the right corner */
+  .login-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    height: 100%;
+    padding-right: 7rem; /* Adjust space from the right */
+    padding-top: 12rem;
+  }
+  
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.85); /* White with some transparency */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 390px; /* Set width of login box */
+    max-width: 100%; /* Ensure responsiveness */
+  }
+  
+  .login-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .login-card label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .login-card button {
+    background-color: #3b82f6; /* Blue */
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  .login-card button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .login-card .footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
